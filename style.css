@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 2000px;
+  position: relative;
+}
+
+.hero {
+  background: linear-gradient(
+      to right,
+      rgba(0, 24, 122, 0.8),
+      rgba(0, 132, 176, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1761479539321-15bdbb458899?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cnVjayUyMGhpZ2h3YXklMjB0cmFuc3BvcnR8ZW58MXx8fHwxNzYyMjc4NTE4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroLeft {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-left: 40px;
+}
+
+.heroLeft h1 {
+  font-size: 4rem;
+  color: white;
+}
+.heroLeft span {
+  color: aqua;
+}
+.heroLeft p {
+  color: grey;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+.heroLeft .heroButtonContainer {
+  margin-top: 32px;
+}
+.heroLeft .heroButtonContainer button {
+  padding: 10px;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.heroLeft .heroButtonContainer button:hover {
+  filter: brightness(1.1);
+}
+
+.heroLeft .heroButtonContainer button:active {
+  filter: brightness(1.5);
+}
+.heroLeft .heroButtonContainer #buttonLeft {
+  background: linear-gradient(
+    to right,
+    rgba(1, 225, 255, 0.4),
+    rgba(0, 195, 255, 0.6)
+  );
+  margin-right: 30px;
+}
+.heroLeft .heroButtonContainer #buttonRight {
+  background-color: rgba(121, 121, 121, 0.418);
+}
+.heroAnimation {
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 30px;
+  width: 100px;
+  height: 100px;
+  color: rgba(245, 245, 245, 0.774);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.heroAnimation .animationContainer {
+  height: 60px;
+  width: 30px;
+  border: 2px solid white;
+  margin-top: 10px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.heroAnimation .animationContainer .animationItem {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  animation-name: swipeDownAnimation;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes swipeDownAnimation {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 30px;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  position: fixed;
+  width: 100%;
+  font-size: 1.2rem;
+  color: white;
+  transition: all 0.7s;
+}
+
+.nav-scrolled {
+  background-color: white;
+  color: black;
+}
+.nav-scrolled a {
+  color: black !important;
+}
+
+.logoName {
+  display: flex;
+  justify-content: center;
+}
+
+.navItems {
+  width: 60%;
+  margin-right: 20px;
+}
+.navItems ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  align-items: center;
+}
+
+.navItems ul li {
+  margin: 0 30px;
+}
+
+.navItems ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.oNas {
+  position: initial;
+  left: 0;
+  height: 500px;
+  border: 2px solid red;
+  display: none;
+}
