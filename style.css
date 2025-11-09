@@ -527,15 +527,53 @@ nav a:hover {
   width: 60%;
   border-radius: 16px;
 }
-@keyframes showOnLoad {
-  from {
-    top: -50px;
-    filter: blur(10px);
-  }
-  to {
-    top: 0px;
-    filter: blur(0px);
-  }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  margin-top: 128px;
+  border-top: 4px solid blue;
+}
+.footerMain {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 16px;
+  gap: 2em;
+}
+
+.footerMainItem {
+  width: 25%;
+}
+
+.footerMainItem ul {
+  list-style-type: none;
+}
+
+.footerMainItem li {
+  padding: 2px 0;
+}
+
+.footerMainItem a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.footerMainItem p {
+  line-height: 25px;
+}
+
+.footerMainItem h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.footerCopyright {
+  text-align: center;
+  padding: 32px 0;
+  font-size: 1.2rem;
 }
 
 @media only screen and (width <= 1400px) {
@@ -593,6 +631,12 @@ nav a:hover {
   }
   .hero .heroLeft {
     width: 70%;
+  }
+  .footerMain {
+    flex-direction: column;
+  }
+  .footerMainItem {
+    width: 100%;
   }
 }
 @media only screen and (width <= 500px) {
