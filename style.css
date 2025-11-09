@@ -412,7 +412,31 @@ nav a:hover {
   width: 30%;
   border: 1px solid rgb(128, 128, 128);
   border-radius: 16px;
-  background-color: white;
+  padding-bottom: 30px;
+  background: radial-gradient(
+    rgba(165, 197, 249, 0.104),
+    rgba(200, 228, 239, 0.042)
+  );
+  transition: all 0.5s ease-in;
+}
+
+.usługiContainerChild:hover {
+  background: radial-gradient(
+    rgba(162, 191, 238, 0.252),
+    rgba(117, 194, 227, 0.163)
+  );
+  transform: scale(1.01);
+}
+
+.usługiContainerChild i {
+  font-size: 1.5rem;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  align-content: center;
+  background: linear-gradient(to right, rgb(1, 98, 255), rgb(16, 165, 228));
+  border-radius: 16px;
+  color: white;
 }
 
 .usługiContainerChild h3 {
