@@ -27,3 +27,14 @@ openSidebarItems.forEach((item) => {
     navShow.classList.remove("navShow");
   });
 });
+
+const button1 = document.getElementById("buttonLeft");
+const button2 = document.getElementById("buttonRight");
+const usługi = document.getElementById("usługi");
+const kontkat = document.getElementById("kontakt");
+button1.addEventListener("click", () => {
+  kontkat.scrollIntoView();
+});
+button2.addEventListener("click", () => {
+  usługi.scrollIntoView();
+});
