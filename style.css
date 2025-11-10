@@ -16,8 +16,9 @@ body {
       rgba(0, 24, 122, 0.8),
       rgba(0, 65, 176, 0.5)
     ),
-    url("https://i0.wp.com/picjumbo.com/wp-content/uploads/white-tir-truck-in-motion-driving-on-highway.jpg?w=2210&quality=70");
+    url("https://www.volvotrucks.pl/content/dam/volvo-trucks/markets/master/home/about-us/landing/about-us-overview-trees-truck.jpg");
   background-size: cover;
+  background-position: center;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -207,7 +208,6 @@ nav a:hover {
 .nav-scrolled {
   background-color: white;
   color: black;
-  border-bottom: 1px solid rgb(0, 149, 255);
 }
 .nav-scrolled a {
   color: black !important;
@@ -254,6 +254,7 @@ nav a:hover {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 32px;
+  margin-top: 32px;
   background: #121fcf;
   background: linear-gradient(to right, #121fcf 0%, #67bafe 67%);
   -webkit-background-clip: text;
@@ -300,31 +301,6 @@ nav a:hover {
 .oNasLeft .image:hover {
   transform: scale(1.02);
 }
-.oNasLeft .image .bluredBG {
-  width: 80%;
-  background: transparent;
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  border: 2px solid black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  padding: 10px 40px;
-  margin-bottom: 20px;
-}
-
-.bluredBG p {
-  text-align: start;
-  font-size: 2rem;
-  line-height: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-.bluredBG span {
-  font-size: 1rem;
-}
 
 .oNasRight {
   width: 50%;
@@ -347,8 +323,8 @@ nav a:hover {
   justify-content: center;
 }
 .dodatkoweInfo .dodatkoweInfoChild {
-  width: 45%;
-  border: 1px solid rgb(128, 128, 128);
+  width: 20%;
+  border: 1px solid rgb(184, 184, 184);
   border-radius: 16px;
   transition: all 0.5s ease;
 }
@@ -358,7 +334,7 @@ nav a:hover {
 }
 .dodatkoweInfoChild i {
   font-size: 1.5rem;
-  width: 50px;
+  width: 100%;
   height: 40px;
   padding-top: 10px;
   text-align: center;
@@ -368,15 +344,10 @@ nav a:hover {
 }
 
 .dodatkoweInfoChild h3 {
-  text-align: start;
+  text-align: center;
   margin: 10px 0;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.dodatkoweInfoChild p {
-  font-size: 1.2rem;
-  color: grey;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .usługi {
@@ -390,7 +361,7 @@ nav a:hover {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 32px;
-  margin-top: 96px;
+  margin-top: 128px;
   background: #121fcf;
   background: linear-gradient(to right, #121fcf 0%, #67bafe 67%);
   -webkit-background-clip: text;
@@ -411,7 +382,7 @@ nav a:hover {
 
 .usługiContainerChild {
   width: 30%;
-  border: 1px solid rgb(128, 128, 128);
+  border: 1px solid rgb(184, 184, 184);
   border-radius: 16px;
   padding-bottom: 30px;
   background: radial-gradient(
@@ -451,11 +422,14 @@ nav a:hover {
   font-size: 1.2rem;
   color: grey;
   text-align: start;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .usługiContainerChild ul {
   margin-left: 20px;
+}
+.usługiContainerChild li {
+  padding: 5px 0;
 }
 .usługiContainerChild li::marker {
   color: #67bafe;
@@ -463,7 +437,7 @@ nav a:hover {
 
 .iContainer {
   background: radial-gradient(
-    rgba(126, 238, 253, 0.721),
+    rgba(126, 238, 253, 0.403),
     rgba(111, 225, 253, 0)
   );
   border-radius: 16px;
@@ -478,7 +452,7 @@ nav a:hover {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 32px;
-  margin-top: 96px;
+  margin-top: 128px;
   background: #121fcf;
   background: linear-gradient(to right, #121fcf 0%, #67bafe 67%);
   -webkit-background-clip: text;
@@ -501,7 +475,7 @@ nav a:hover {
 .kontakt .card {
   display: flex;
   align-items: center;
-  border: 1px solid grey;
+  border: 1px solid rgb(184, 184, 184);
   margin: 5px 0;
   border-radius: 16px;
   width: 100%;
@@ -579,7 +553,7 @@ footer {
   padding-right: 5px;
 }
 .footerMainItem a:hover {
-  border-bottom: 4px solid rgb(16, 165, 228);
+  border-bottom: 2px solid rgb(16, 165, 228);
 }
 
 .footerMainItem p {
@@ -601,7 +575,6 @@ footer {
 @media only screen and (width <= 1400px) {
   .dodatkoweInfoChild {
     flex-basis: calc(50%-2em);
-    height: 200px;
   }
   .oNasMain {
     flex-wrap: wrap;
@@ -627,7 +600,7 @@ footer {
     cursor: pointer;
   }
   .usługiContainerChild {
-    flex-basis: calc(50% - 2em);
+    flex-basis: 100%;
   }
   .kontaktMain {
     flex-wrap: wrap;
@@ -681,13 +654,7 @@ footer {
   .heroLeft {
     width: 90% !important;
   }
-  .bluredBG {
-    margin: 0 20px;
-    display: none !important;
-  }
-  .bluredBG p {
-    font-size: 1.5rem;
-  }
+
   .oNasRight p {
     font-size: 1rem;
   }
