@@ -26,6 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 32px;
+  padding: 0 40px;
 }
 
 .heroLeft {
@@ -34,7 +35,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 45%;
-  margin-left: 40px;
 }
 
 .heroLeft h1 {
@@ -246,7 +246,7 @@ nav a:hover {
 .oNas {
   display: flex;
   flex-direction: column;
-  margin: 0px 40px;
+  padding: 0 40px;
   margin-top: 128px;
 }
 
@@ -451,6 +451,7 @@ nav a:hover {
   font-size: 1.2rem;
   color: grey;
   text-align: start;
+  margin-bottom: 32px;
 }
 
 .usługiContainerChild ul {
@@ -504,7 +505,7 @@ nav a:hover {
   margin: 5px 0;
   border-radius: 16px;
   width: 100%;
-  min-width: 280px;
+  min-width: 260px;
 }
 
 .kontakt .card .cardDodatkowe {
@@ -689,5 +690,22 @@ footer {
   }
   .oNasRight p {
     font-size: 1rem;
+  }
+  .oNas,
+  .usługi,
+  .kontakt,
+  .hero,
+  footer {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (width <= 300px) {
+  .oNas,
+  .usługi,
+  .kontakt,
+  .hero,
+  footer {
+    padding: 0 10px;
   }
 }
