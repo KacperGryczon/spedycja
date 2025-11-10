@@ -1,13 +1,14 @@
 const nav = document.querySelector("nav");
 const heroAnimation = document.getElementById("heroAnimationId");
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY > 50) {
-//     nav.classList.add("nav-scrolled");
-//   }
-//   if (window.scrollY < 50) {
-//     nav.classList.remove("nav-scrolled");
-//   }
-// });
+const logo = document.querySelector(".logoName");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    logo.classList.add("logoNameScrolled");
+  }
+  if (window.scrollY < 50) {
+    logo.classList.remove("logoNameScrolled");
+  }
+});
 
 const openSidebar = document.querySelector(".bars");
 const closeSidebar = document.querySelector(".x");

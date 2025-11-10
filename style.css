@@ -143,9 +143,10 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: white;
   width: 100%;
   font-size: 1.2rem;
-  color: white;
+  color: black;
   transition: all 0.7s;
   z-index: 9999;
 }
@@ -160,6 +161,7 @@ nav a {
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
+  color: black;
 }
 nav a:hover {
   border-bottom: 4px solid rgb(16, 165, 228);
@@ -205,13 +207,6 @@ nav a:hover {
   padding: 20px 0;
   text-align: center;
 }
-.nav-scrolled {
-  background-color: white;
-  color: black;
-}
-.nav-scrolled a {
-  color: black !important;
-}
 
 .logoName {
   display: flex;
@@ -219,7 +214,12 @@ nav a:hover {
 }
 
 .logoName img {
-  width: 200px;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.logoNameScrolled img {
+  width: 180px;
 }
 
 .navItems {
@@ -240,7 +240,7 @@ nav a:hover {
 .navItems ul li a {
   text-decoration: none;
   cursor: pointer;
-  color: white;
+  color: black;
 }
 
 .oNas {
