@@ -445,7 +445,7 @@ nav a:hover {
   );
   border-radius: 16px;
   border-bottom-right-radius: 0;
-  padding-bottom: 16px;
+  padding: 8px 0;
 }
 
 .kontakt {
