@@ -460,6 +460,16 @@ nav a:hover {
   color: #67bafe;
 }
 
+.iContainer {
+  background: radial-gradient(
+    rgba(126, 238, 253, 0.721),
+    rgba(111, 225, 253, 0)
+  );
+  border-radius: 16px;
+  border-bottom-right-radius: 0;
+  padding-bottom: 16px;
+}
+
 .kontakt {
   padding: 0 40px;
 }
@@ -494,6 +504,7 @@ nav a:hover {
   margin: 5px 0;
   border-radius: 16px;
   width: 100%;
+  min-width: 280px;
 }
 
 .kontakt .card .cardDodatkowe {
@@ -535,6 +546,7 @@ footer {
   padding: 0 40px;
   margin-top: 128px;
   border-top: 4px solid rgb(115, 204, 255);
+  background-color: rgba(240, 248, 255, 0.484);
 }
 .footerMain {
   display: flex;
