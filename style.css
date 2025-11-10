@@ -523,7 +523,7 @@ footer {
   flex-direction: column;
   padding: 0 40px;
   margin-top: 128px;
-  border-top: 4px solid rgb(115, 204, 255);
+  border-top: 1px solid rgb(184, 184, 184);
   background-color: rgba(240, 248, 255, 0.484);
 }
 .footerMain {
