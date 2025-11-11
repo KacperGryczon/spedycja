@@ -1,18 +1,20 @@
 const nav = document.querySelector("nav");
 const heroAnimation = document.getElementById("heroAnimationId");
 const logo = document.querySelector(".logoName");
+const navShow = document.querySelector(".nav");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     logo.classList.add("logoNameScrolled");
+    navShow.style.paddingTop = "30px";
   }
   if (window.scrollY < 50) {
     logo.classList.remove("logoNameScrolled");
+    navShow.style.paddingTop = "40px";
   }
 });
 
 const openSidebar = document.querySelector(".bars");
 const closeSidebar = document.querySelector(".x");
-const navShow = document.querySelector(".nav");
 
 openSidebar.addEventListener("click", () => {
   navShow.classList.add("navShow");
