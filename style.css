@@ -6,8 +6,31 @@
 }
 
 body {
-  position: relative;
   line-height: 1.4;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: [full-width-start] 40px [content-start] 1fr [content-end] 40px [full-width-end];
+}
+
+.content-grid > * {
+  grid-column: content;
+}
+
+.content-grid > .full-width {
+  grid-column: full-width;
+}
+
+section,
+footer {
+  padding-block: 128px;
+  padding-inline: 40px;
+}
+
+.content {
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 .hero {
@@ -19,23 +42,19 @@ body {
     url("./public/hero.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  padding-top: 32px;
+  height: min(1000px, calc(100dvh - 2 * 128px));
 }
 
+.hero .content {
+  height: 100%;
+  position: relative;
+}
 .heroLeft {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-block: auto;
+  margin-inline: unset;
   display: flex;
   flex-direction: column;
-  width: 80ch;
-  margin-left: 40px;
+  max-width: 80ch;
   line-height: 1.2;
 }
 
@@ -91,15 +110,15 @@ body {
   color: white;
 }
 .heroAnimation {
-  justify-self: center;
-  align-self: center;
-  margin-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
   width: 100px;
   height: 100px;
   color: rgba(245, 245, 245, 0.774);
   display: flex;
   flex-direction: column;
-  justify-items: center;
   align-items: center;
 }
 
@@ -143,16 +162,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0px;
+  padding: 20px 64px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: white;
-  width: 100vw;
   font-size: 1.2rem;
   color: black;
-  transition: all 0.7s;
   z-index: 9999;
 }
 
@@ -215,20 +232,11 @@ nav a:hover {
 .logoName {
   display: flex;
   justify-content: center;
-  margin-left: 40px;
 }
 
 .logoName img {
-  width: 250px;
-  transition: all 0.3s ease;
-}
-
-.logoNameScrolled img {
   width: 180px;
-}
-
-.navItems {
-  margin-right: 40px;
+  transition: all 0.3s ease;
 }
 
 .navItems ul {
@@ -248,8 +256,6 @@ nav a:hover {
 .oNas {
   display: flex;
   flex-direction: column;
-  padding: 0 40px;
-  margin-block: 128px;
 }
 
 .oNas h2 {
@@ -350,7 +356,6 @@ nav a:hover {
 .usługi {
   display: flex;
   flex-direction: column;
-  padding: 0 40px;
   background-color: rgba(240, 248, 255, 0.484);
 }
 
@@ -358,7 +363,6 @@ nav a:hover {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 32px;
-  margin-top: 128px;
   background: #121fcf;
   background: linear-gradient(to right, #121fcf 0%, #67bafe 67%);
   -webkit-background-clip: text;
@@ -450,14 +454,10 @@ nav a:hover {
   padding: 8px 0;
 }
 
-.kontakt {
-  padding: 0 40px;
-}
 .kontakt h2 {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 32px;
-  margin-top: 128px;
   background: #121fcf;
   background: linear-gradient(to right, #121fcf 0%, #67bafe 67%);
   -webkit-background-clip: text;
@@ -524,23 +524,26 @@ nav a:hover {
 }
 
 footer {
+  background-color: rgba(240, 248, 255, 0.484);
+  padding-bottom: 64px;
+}
+
+footer .content {
   display: flex;
   flex-direction: column;
-  padding: 0 40px;
-  margin-top: 128px;
   border-top: 1px solid rgb(184, 184, 184);
-  background-color: rgba(240, 248, 255, 0.484);
 }
 .footerMain {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  margin-top: 16px;
   gap: 2em;
+  padding-top: 32px;
+  width: 100%;
 }
 
 .footerMainItem {
-  width: 25%;
+  max-width: 350px;
 }
 
 .footerMainItem ul {
