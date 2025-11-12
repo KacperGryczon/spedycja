@@ -57,6 +57,7 @@ body {
 }
 .heroLeft .heroButtonContainer {
   margin-top: 48px;
+  gap: 1em;
 }
 .heroLeft .heroButtonContainer button {
   padding-block: 15px;
@@ -67,7 +68,8 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  width: 40%;
+  width: 42%;
+  height: auto;
 }
 
 .heroLeft .heroButtonContainer button:hover {
@@ -352,6 +354,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   padding: 0 40px;
+  margin: 192px 0;
   background-color: rgba(240, 248, 255, 0.484);
 }
 
@@ -359,7 +362,6 @@ nav a:hover {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 32px;
-  margin-top: 128px;
   background: #121fcf;
   background: linear-gradient(to right, #121fcf 0%, #67bafe 67%);
   -webkit-background-clip: text;
@@ -487,7 +489,6 @@ nav a:hover {
   border: 1px solid rgb(184, 184, 184);
   border-radius: 16px;
   width: 100%;
-  min-width: 260px;
   padding: 10px;
 }
 
@@ -673,6 +674,11 @@ footer {
   .kontakt,
   footer {
     padding: 0 20px;
+  }
+  .oNas h2,
+  .usługi h2,
+  .kontakt h2 {
+    font-size: 2.5rem;
   }
   .heroLeft {
     margin-left: 20px;

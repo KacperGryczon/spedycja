@@ -12,6 +12,13 @@ window.addEventListener("scroll", () => {
     navShow.style.paddingTop = "40px";
   }
 });
+window.addEventListener("load", () => {
+  if (window.innerWidth < 400) {
+    logo.querySelector("img").style.width = "180px";
+    nav.style.paddingLeft = "0px";
+    nav.style.paddingRight = "0px";
+  }
+});
 
 const openSidebar = document.querySelector(".bars");
 const closeSidebar = document.querySelector(".x");
@@ -36,7 +43,7 @@ const button2 = document.getElementById("buttonRight");
 const usługi = document.getElementById("usługi");
 const kontkat = document.getElementById("kontakt");
 button1.addEventListener("click", () => {
-  kontkat.scrollIntoView();
+  kontkat.scrollIntoView(false);
 });
 button2.addEventListener("click", () => {
   usługi.scrollIntoView();
