@@ -13,7 +13,7 @@ window.addEventListener("scroll", () => {
   }
 });
 window.addEventListener("load", () => {
-  if (window.innerWidth < 400) {
+  if (window.innerWidth < 450) {
     logo.querySelector("img").style.width = "180px";
     nav.style.paddingLeft = "0px";
     nav.style.paddingRight = "0px";
@@ -47,4 +47,27 @@ button1.addEventListener("click", () => {
 });
 button2.addEventListener("click", () => {
   usługi.scrollIntoView({ block: "start" });
+});
+
+const observerOptions = {
+  root: null,
+  threshold: 0,
+  rootMargin: "0px 0px -50px 0px",
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("in-view");
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  const sections = Array.from(document.getElementsByClassName("section"));
+
+  for (let section of sections) {
+    observer.observe(section);
+  }
 });

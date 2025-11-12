@@ -443,10 +443,6 @@ nav a:hover {
   color: rgb(28, 28, 28);
 }
 
-/* .usługiContainerChild span {
-  font-weight: 600;
-} */
-
 .iContainer {
   display: flex;
   justify-content: center;
@@ -587,6 +583,18 @@ footer {
   font-size: 1.2rem;
 }
 
+.fadeUp {
+  transform: translateY(100px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.in-view {
+  transform: none;
+  opacity: 1;
+}
+
 @media only screen and (width <= 1400px) {
   .oNasMain {
     flex-wrap: wrap;
@@ -669,7 +677,6 @@ footer {
   .heroLeft {
     width: 90% !important;
   }
-
   .oNasRight p {
     font-size: 1rem;
   }
@@ -687,7 +694,6 @@ footer {
   .heroLeft {
     margin-left: 20px;
   }
-
   .kontaktInfoCards {
     margin-right: 20px;
   }
