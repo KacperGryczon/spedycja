@@ -192,8 +192,7 @@ nav a:hover {
   display: flex;
   right: 0;
   padding: 0;
-  padding-top: 40px;
-  padding-right: 15px;
+  padding-top: 30px;
 }
 
 .navShow i {
@@ -201,7 +200,7 @@ nav a:hover {
   font-size: 2rem;
   cursor: pointer;
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 35px;
 }
 .navShow a {
   color: black;
@@ -209,6 +208,8 @@ nav a:hover {
 }
 .navShow ul {
   list-style-type: none;
+  margin-right: 0;
+  padding-right: 0;
 }
 .navShow li {
   padding: 20px 0;
