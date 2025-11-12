@@ -355,6 +355,7 @@ nav a:hover {
   flex-direction: column;
   padding: 0 40px;
   margin: 192px 0;
+  scroll-margin-top: 100px;
   background-color: rgba(240, 248, 255, 0.484);
 }
 
@@ -455,6 +456,7 @@ nav a:hover {
 
 .kontakt {
   padding: 0 40px;
+  scroll-margin-top: 100px;
 }
 .kontakt h2 {
   text-align: center;
@@ -539,6 +541,7 @@ footer {
   align-items: start;
   justify-content: space-between;
   margin-top: 16px;
+  margin-bottom: 64px;
   gap: 2em;
 }
 

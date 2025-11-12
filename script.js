@@ -43,8 +43,8 @@ const button2 = document.getElementById("buttonRight");
 const usługi = document.getElementById("usługi");
 const kontkat = document.getElementById("kontakt");
 button1.addEventListener("click", () => {
-  kontkat.scrollIntoView(false);
+  kontkat.scrollIntoView({ block: "start" });
 });
 button2.addEventListener("click", () => {
-  usługi.scrollIntoView();
+  usługi.scrollIntoView({ block: "start" });
 });
