@@ -9,6 +9,9 @@ body {
   position: relative;
   line-height: 1.4;
 }
+a {
+  text-decoration: none !important;
+}
 
 .hero {
   background: linear-gradient(
@@ -194,7 +197,10 @@ nav a:hover {
   padding: 0;
   padding-top: 30px;
 }
-
+.navShow .fa-arrow-down {
+  font-size: 1rem;
+  color: grey;
+}
 .navShow i {
   text-align: end;
   font-size: 2rem;
@@ -212,8 +218,9 @@ nav a:hover {
   padding-right: 0;
 }
 .navShow li {
-  padding: 20px 0;
-  text-align: center;
+  margin-left: 35px;
+  padding-block: 20px;
+  text-align: start;
 }
 
 .logoName {
@@ -489,6 +496,11 @@ nav a:hover {
   border-radius: 16px;
   width: 100%;
   padding: 10px;
+}
+.kontakt .card a {
+  color: black;
+  margin-bottom: 0;
+  text-align: start;
 }
 
 .kontakt .card .cardDodatkowe {
